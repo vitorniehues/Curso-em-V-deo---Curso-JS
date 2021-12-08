@@ -16,7 +16,7 @@
 <body>
     <h1>Iniciando estuos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <p name="paragrafo2">Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
     <p>
         Dom significa <b>D</b>ocument <b>O</b>bject <b>M</b>odel
         <br>
@@ -28,9 +28,15 @@
         <br>
         No script, utilizando as propriedades do objeto "document", chama-se as funções para retornar os objetos do html.
     </p>
+    <div id = "divID">
+        Teste de DIV
+    </div>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0]; //selecionar primeiro parágrafo
-        
+        var p2 = window.document.getElementsByName('paragrafo2');
+        p2[0].style.color = 'red';
+        var div = window.document.getElementById("divID");
+        div.style.backgroundColor = 'orange';
 
     </script>
 </body>
