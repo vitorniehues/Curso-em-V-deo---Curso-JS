@@ -19,3 +19,11 @@ footer{
     text-align: center;
     font-style: italic;
 }
+div#esq{
+    float: left;
+    width: 250px;
+}
+div#dir{
+    float: right;
+    width: 250px;
+}
