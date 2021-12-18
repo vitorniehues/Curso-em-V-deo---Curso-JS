@@ -4,7 +4,7 @@ function geraTabuada() {
     if (num == 0) document.getElementById('txt1').value = 0
 
     slc.replaceChildren();
-    for (let i = 0; i <= 10 ; i++) {
+    for (let i = 1; i <= 10 ; i++) {
         let opt = document.createElement('option')
         opt.innerHTML = `${num} X ${i} = ${i*num}`
         slc.appendChild(opt);
